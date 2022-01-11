@@ -56,7 +56,7 @@ body {
 			top: 13px;
 			width: 60%;
 		}
-		
+
 		&::after {
 			top: 27px;
 			width: 30%;
@@ -108,6 +108,46 @@ body {
 
 		&::before {
 			background-color: $light-white;
+		}
+	}
+}
+
+// ===========================
+// MEDIA
+// ===========================
+
+@media (min-width: 768px) {
+	.white-block {
+		height: 50px;
+		width: 45%;
+	}
+
+	.header {
+		&__heading {
+			font-size: 6.6rem;
+		}
+
+		&__text {
+			font-size: 2.2rem;
+		}
+
+		&__btn {
+			font-size: 1.6rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.burger-btn {
+		top: 50px;
+		right: 50px;
+	}
+
+	.header {
+		background-image: $blue-gradient, url('../img/header_1920.jpg');
+
+		&__heading {
+			font-size: 10rem;
 		}
 	}
 }
