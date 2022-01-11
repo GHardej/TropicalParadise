@@ -32,16 +32,9 @@ body {
 	z-index: 100;
 
 	&:focus {
-		outline: none;
+		// outline: none;
 		border: 1px solid rgba(255, 255, 255, 0.5);
 		border-radius: 8px;
-	}
-
-	&:hover {
-		.burger-btn__bars::after,
-		.burger-btn__bars::before {
-			width: 100%;
-		}
 	}
 
 	&__box {
@@ -59,15 +52,62 @@ body {
 	&__bars {
 		width: 100%;
 
-		&::after {
+		&::before {
 			top: 13px;
 			width: 60%;
 		}
-
-		&::before {
+		
+		&::after {
 			top: 27px;
 			width: 30%;
-            transition-delay: .1s;
+			transition-delay: 0.1s;
+		}
+	}
+
+	&:hover {
+		.burger-btn__bars::after,
+		.burger-btn__bars::before {
+			width: 100%;
+		}
+	}
+}
+
+// HEADER
+.header {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 75vh;
+	padding: 2em;
+	text-align: center;
+	color: $pure-white;
+	@include heroImages('../img/header_640.jpg');
+	background-attachment: scroll;
+
+	&__heading {
+		font-family: 'Dancing Script', cursive;
+		font-size: 4.8rem;
+		font-weight: 300;
+	}
+
+	&__text {
+		font-size: 1.4rem;
+	}
+
+	&__btn {
+		margin-top: 2em;
+		padding: 0.8em 1.6em;
+		background: $pure-white;
+		font-size: 1.4rem;
+		border-radius: 8px;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $dark;
+
+		&::before {
+			background-color: $light-white;
 		}
 	}
 }
