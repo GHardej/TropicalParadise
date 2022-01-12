@@ -175,9 +175,62 @@ body {
 	}
 }
 
+// MAIN
+// DREAMS SECTION
+.dreams {
+	&__box {
+		display: flex;
+		flex-direction: column;
+		margin: 2em 0;
+	}
+
+	&__img {
+		width: 100%;
+		margin-bottom: 1em;
+	}
+
+	&__title {
+		margin-bottom: 0.5em;
+	}
+
+	&__text {
+		font-size: 1.4rem;
+	}
+}
+
 // ===========================
 // MEDIA
 // ===========================
+
+@media (min-width: 576px) {
+.dreams {
+	&__box {
+		flex-direction: row;
+		justify-content: space-between;
+
+		&-text {
+			width: 55%;
+
+			&--right {
+				text-align: right;
+			}
+		}
+
+		&-img {
+			width: 40%;
+
+			&--right {
+				order: 1;
+			}
+		}
+	}
+
+	&__img {
+		margin-bottom: 0;
+		max-height: 300px;
+	}
+}
+}
 
 @media (min-width: 768px) {
 	.white-block {
@@ -196,6 +249,12 @@ body {
 
 		&__btn {
 			font-size: 1.6rem;
+		}
+	}
+
+	.dreams {
+		&__text {
+			font-size: 1.8rem;
 		}
 	}
 }
