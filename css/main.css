@@ -144,8 +144,19 @@ body {
           align-items: center;
   height: 100vh;
   width: 100%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   background-image: linear-gradient(45deg, #1469f1, #2a0ab8);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: transform 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: transform 0.5s cubic-bezier(0.65, 0.05, 0.36, 1), -webkit-transform 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
   z-index: 50;
+}
+
+.nav--active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .nav__item {
@@ -177,6 +188,33 @@ body {
 .nav__item:hover::before {
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
+}
+
+@-webkit-keyframes navItemsAnimation {
+  from {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes navItemsAnimation {
+  from {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.nav-item-animation {
+  -webkit-animation: navItemsAnimation 1s both;
+          animation: navItemsAnimation 1s both;
 }
 
 .header {
