@@ -43,20 +43,18 @@
   height: 40px;
   width: 60%;
   background-color: #fff;
+  -webkit-transform: skew(45deg);
+          transform: skew(45deg);
 }
 
 .white-block-left {
   bottom: 0;
   left: -50px;
-  -webkit-transform: skew(45deg);
-          transform: skew(45deg);
 }
 
 .white-block-right {
   top: 0;
   right: -50px;
-  -webkit-transform: skew(45deg);
-          transform: skew(45deg);
 }
 
 .section-heading {
