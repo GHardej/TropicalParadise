@@ -326,7 +326,7 @@ body {
 .hero-img {
   position: relative;
   padding: 10em 2em;
-  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/polynesia_640.jpg");
+  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/hero-img_640.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -343,6 +343,35 @@ body {
 
 .hero-img__text {
   padding: 1em 0;
+}
+
+.islands__card {
+  position: relative;
+  margin: 1em 0;
+  height: 450px;
+  text-align: center;
+  color: #fff;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.islands__card-img {
+  padding: 2em;
+  height: 100%;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.islands__card-img--first {
+  background-image: linear-gradient(45deg, rgba(8, 206, 255, 0.75), rgba(8, 24, 255, 0.75)), url("../img/island1_640.jpg");
+}
+
+.islands__card-img--second {
+  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/island2_640.jpg");
+}
+
+.islands__card-img--third {
+  background-image: linear-gradient(45deg, rgba(190, 10, 214, 0.75), rgba(68, 0, 255, 0.75)), url("../img/island3_640.jpg");
 }
 
 @media (min-width: 576px) {
@@ -442,7 +471,7 @@ body {
   }
   .hero-img {
     padding: 40rem 2em;
-    background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/polynesia_1920.jpg");
+    background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/hero-img_1920.jpg");
   }
   .hero-img__title {
     font-size: 7.2rem;
