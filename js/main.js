@@ -31,3 +31,4 @@ const handleNavItemsAnimation = () => {
 // };
 
 // navItems.addEventListener('click', removeNav);
+
