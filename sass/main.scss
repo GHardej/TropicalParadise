@@ -135,6 +135,12 @@ body {
 	animation: navItemsAnimation 1s both;
 }
 
+.burger-btn-black-bars,
+.burger-btn-black-bars::before,
+.burger-btn-black-bars::after {
+	background-color: $dark;
+}
+
 // HEADER
 .header {
 	position: relative;
